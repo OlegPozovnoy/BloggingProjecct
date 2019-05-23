@@ -15,4 +15,4 @@ app.get(`/greeting`, (req, res) => {
 });
 // Starting our server on port 4000
 const port = process.env.PORT || 4000;
-app.listen(4000, () => console.log(`Listening on ${port}`));
+app.listen(process.env.PORT || 4000, () => console.log("Listening on 4000"));
